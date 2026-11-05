@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenZen</string>
+    <string name="_zero" translatable="false">0</string>
+
+    <string name="accessibility_service_label">ScreenZen 呼吸拦截</string>
+    <string name="accessibility_service_description">检测到打开被拦截的应用时，先盖上一层呼吸倒计时遮罩，数到 0 才放行。</string>
+
+    <!-- 主页 -->
+    <string name="home_title">屏息</string>
+    <string name="home_master_title">一键拦截</string>
+    <string name="home_master_on">拦截总开关已开启</string>
+    <string name="home_master_off">拦截总开关已关闭 · 所有应用一律放行</string>
+    <string name="home_master_on_toast">已开启拦截总开关</string>
+    <string name="home_master_off_toast">已关闭拦截总开关</string>
+    <string name="home_today">今日</string>
+    <string name="home_today_release">打开</string>
+    <string name="home_today_abandon">放弃</string>
+    <string name="home_total_format">累计 %1$d 次打开 · %2$d 次放弃</string>
+    <string name="home_chart_title">近 7 天打开次数</string>
+    <string name="home_per_app_title">按 App 统计</string>
+    <string name="home_per_app_item_format">今日 %1$d · 累计 %2$d ｜ 放弃 %3$d</string>
+    <string name="home_usage_title">今日使用时长</string>
+    <string name="home_usage_need_permission">未获得「使用情况访问」权限，点这里去开启</string>
+    <string name="home_empty">还没有记录。去「拦截清单」勾几个应用试试。</string>
+    <string name="home_usage_empty">今天还没有可统计的使用记录。</string>
+    <string name="action_blocklist">拦截清单</string>
+    <string name="action_settings">设置</string>
+    <string name="action_onboarding">权限引导</string>
+
+    <!-- 拦截清单 -->
+    <string name="blocklist_title">拦截清单</string>
+    <string name="blocklist_search_hint">搜索应用</string>
+    <string name="blocklist_summary_format">已拦截 %1$d 个应用</string>
+    <string name="blocklist_empty">没有找到匹配的应用</string>
+    <string name="blocklist_loading">正在读取应用列表…</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_countdown_title">呼吸倒计时</string>
+    <string name="settings_countdown_value_format">%1$d 秒</string>
+    <string name="settings_countdown_zero_hint">设为 0 秒 = 不出现遮罩，等同关闭拦截</string>
+    <string name="settings_max_seconds" translatable="false">60 秒</string>
+    <string name="settings_export_title">数据导出</string>
+    <string name="settings_export_csv">导出 CSV</string>
+    <string name="settings_export_db">导出数据库 (.db)</string>
+    <string name="settings_export_hint">CSV 可直接用 Excel 打开；.db 用于备份和迁移。文件保存在应用目录下，导出后可从分享面板发到别处。</string>
+    <string name="settings_export_empty">还没有任何记录，先拦一次再导出。</string>
+    <string name="settings_export_done_format">已导出：%1$s</string>
+    <string name="settings_export_failed_format">导出失败：%1$s</string>
+    <string name="settings_record_count_format">当前共 %1$d 条记录</string>
+
+    <!-- 引导页 -->
+    <string name="onboarding_title">权限引导</string>
+    <string name="onboarding_intro">四个开关都打开，拦截才能稳定生效。每一步都有状态检测，点右侧按钮去设置。</string>
+    <string name="onboarding_step_accessibility">1. 无障碍服务</string>
+    <string name="onboarding_step_accessibility_desc">检测当前打开的是哪个 App，并用它回到桌面。这是拦截的基础。</string>
+    <string name="onboarding_step_overlay">2. 悬浮窗</string>
+    <string name="onboarding_step_overlay_desc">用来盖住全屏的呼吸遮罩。</string>
+    <string name="onboarding_step_usage">3. 使用情况访问</string>
+    <string name="onboarding_step_usage_desc">读取今日各 App 使用时长，用于统计。不开启只影响统计，不影响拦截。</string>
+    <string name="onboarding_step_battery">4. 电池优化白名单</string>
+    <string name="onboarding_step_battery_desc">让系统不要为了省电把拦截服务杀掉。</string>
+    <string name="onboarding_step_keepalive">5. 保活授权（重启后仍生效）</string>
+    <string name="onboarding_step_keepalive_desc">允许本应用自己写回无障碍开关，手机重启后不用手动重开。需要电脑上用 adb 执行一次命令，授权永久有效。</string>
+    <string name="onboarding_step_autostart">6. 自启动（国产 ROM 建议开）</string>
+    <string name="onboarding_step_autostart_desc">部分系统没有公开接口，点进去自行找到本应用并允许自启动。</string>
+    <string name="onboarding_action_go">去开启</string>
+    <string name="onboarding_action_done">已开启</string>
+    <string name="onboarding_action_copy">复制命令</string>
+    <string name="onboarding_status_missing">未开启</string>
+    <string name="onboarding_status_unknown">建议开启</string>
+    <string name="onboarding_copied">命令已复制，粘贴到电脑终端执行</string>
+    <string name="onboarding_adb_format">adb shell pm grant %1$s android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="onboarding_adb_hint">把手机用数据线连到电脑，在电脑终端里执行上面这条命令（本机已装 adb，可直接粘贴）。</string>
+    <string name="onboarding_summary_format">拦截 %1$d 个应用 · 倒计时 %2$d 秒</string>
+
+    <!-- 遮罩 -->
+    <string name="overlay_breath_hint">深呼吸，放松一下</string>
+    <string name="overlay_abandon">算了，不开了</string>
+
+    <string name="common_share">分享导出文件</string>
+</resources>

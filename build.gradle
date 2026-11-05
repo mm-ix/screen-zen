@@ -1,0 +1,5 @@
+// Top-level build file. AGP version is pinned to 8.5.2 because that is the
+// only version present in the local Gradle cache; it caps compileSdk at 34.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}

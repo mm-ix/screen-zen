@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 外圈：呼吸的轮廓 -->
+    <path
+        android:fillAlpha="0.35"
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,54 m-30,0 a30,30 0 1,0 60,0 a30,30 0 1,0 -60,0 z" />
+    <!-- 内圆：收敛的核 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,54 m-17,0 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0 z" />
+</vector>

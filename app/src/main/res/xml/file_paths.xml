@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 导出落在 getExternalFilesDir()/exports，无需存储权限 -->
+    <external-files-path
+        name="exports"
+        path="exports/" />
+</paths>
