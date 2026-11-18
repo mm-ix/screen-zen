@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zen_primary">#1F6F5C</color>
+    <color name="zen_primary_dark">#155347</color>
+    <color name="zen_accent">#4C9A82</color>
+
+    <color name="overlay_scrim">#F80E1116</color>
+    <color name="overlay_button_bg">#33FFFFFF</color>
+    <color name="overlay_circle">#3D22B08A</color>
+    <color name="overlay_circle_ring">#B322B08A</color>
+    <color name="overlay_text_primary">#FFFFFFFF</color>
+    <color name="overlay_text_secondary">#B3FFFFFF</color>
+
+    <color name="chart_bar">#1F6F5C</color>
+    <color name="chart_bar_track">#1F1F6F5C</color>
+    <color name="chart_text">#8A000000</color>
+
+    <color name="status_ok">#1F6F5C</color>
+    <color name="status_missing">#B3261E</color>
+    <color name="status_neutral">#8A000000</color>
+</resources>

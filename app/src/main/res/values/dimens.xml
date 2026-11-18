@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="card_gap">12dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="stat_number">40sp</dimen>
+
+    <dimen name="overlay_circle_size">220dp</dimen>
+    <dimen name="overlay_countdown">72sp</dimen>
+    <dimen name="overlay_button_margin">72dp</dimen>
+</resources>
